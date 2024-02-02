@@ -12,8 +12,8 @@ const Header = () => {
                 <div className="top-header col-12 ">
                     <div className="container d-flex item-center " style={{ height: 45 }}>
                         <div className="top-contact col-4 d-flex item-center">
-                            <div className='display-flex'> <FaEnvelope /> reseach.mazedan@email.com</div>
-                            <div className='display-flex'><FaPhoneAlt /> +91 8789999999</div>
+                            <NavLink to={"mailto:reseach.mazedan@email.com"} className='display-flex'> <FaEnvelope /> reseach.mazedan@email.com</NavLink>
+                            <NavLink to={"tel:994477338822"} className='display-flex'><FaPhoneAlt /> +91 8789999999</NavLink>
                         </div>
                         <div className="clock col-4 text-center">
                             <Clock />
@@ -59,7 +59,7 @@ const Header = () => {
                         <div> <NavLink to={'/publication'}>PUBLICATIONS</NavLink></div>
                         <div> <NavLink to={'/training'}>TRAINING COURSES</NavLink></div>
                         <div> <NavLink to={'awards'}>AWARDS</NavLink></div>
-                        <div> <NavLink to={'server-error'} >CONTACT US</NavLink></div>
+                        <div> <NavLink to={'/contact-us'} >CONTACT US</NavLink></div>
                     </div>
                 </div>
             </div>
@@ -75,9 +75,11 @@ const Wrapper = styled.section`
         font-size: 1.1rem;
             .top-contact{
                 gap: 5%;
-                div{
+                a{
                     gap: 10px;
                     white-space: nowrap;
+                    text-decoration: none;
+                    color: ${({ theme }) => theme.colors.white};
                 }
             }
             .clock{

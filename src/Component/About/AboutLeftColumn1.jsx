@@ -12,7 +12,7 @@ const AboutLeftColumn1 = () => {
             </div>
             <div className="content-data">
                     <div>  &#10146; <NavLink to={""}> Mazedan at a Glance</NavLink></div>
-                    <div> &#10146; <NavLink> Executive Board</NavLink></div>
+                    <div > &#10146; <NavLink> Executive Board</NavLink></div>
                     <div> &#10146; <NavLink> Constitution</NavLink></div>
                     <div> &#10146; <NavLink> Contacts</NavLink></div>
             </div>

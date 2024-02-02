@@ -49,7 +49,7 @@ const AboutMainSection = () => {
                                     <div className='border-tool d-flex item-center'>
                                         <h2>MAZEDAN </h2> &nbsp;<h2> EXECUTIVE BOARD</h2>
                                     </div>
-                                    <div className="about-persons">
+                                    <div className="about-persons" id='ExecutiveBoard'>
                                         <p>The Executive Board is the main Governing Body, consisting of 6 dignitaries and 4 elected Members. The executive board sessions are chaired by the President of Mazedan International Research Academy.
                                             The executive board has full authority to decide on the programme of work; approve projects, programmes, and grants; and adopt or recommend (pending the final approval of the Governing Council) action on matters related to policy, the annual administrative budget, applications for membership and staffing within the fund.
                                             The Board meets three times a year, normally in the months of April, September and December; the exact dates of which are decided upon by the board.As with the governing council, the distribution of the total number of votes in the executive board is now being calculated both on membership and contribution. The dignitaries and governing body members are elected for a five-year term of office within their respective lists and sub-lists and are approved by the governing council.</p>
