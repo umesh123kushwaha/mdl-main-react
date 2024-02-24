@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import styled from 'styled-components'
 
 const TrainingLeftColumn = () => {
@@ -11,11 +12,11 @@ const TrainingLeftColumn = () => {
                         <h3>MAZEDAN TRAINING HOME</h3>
                     </div>
                     <div className="content-data">
-                        <div>  &#10146; <NavLink> About the Courses</NavLink></div>
-                        <div> &#10146; <NavLink> Certification Courses</NavLink></div>
-                        <div> &#10146; <NavLink> Trainings</NavLink></div>
-                        <div> &#10146; <NavLink> Sponsored Courses</NavLink></div>
-                        <div> &#10146; <NavLink> FAQ</NavLink></div>
+                        <div>  &#10146; <HashLink to={''}> About the Courses</HashLink></div>
+                        <div> &#10146; <HashLink to={''}> Certification Courses</HashLink></div>
+                        <div> &#10146; <HashLink to={''}> Trainings</HashLink></div>
+                        <div> &#10146; <HashLink to={''}> Sponsored Courses</HashLink></div>
+                        <div> &#10146; <HashLink to={''}> FAQ</HashLink></div>
                     </div>
                 </div>
                 <div className="second-column">

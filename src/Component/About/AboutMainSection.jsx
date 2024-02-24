@@ -16,7 +16,7 @@ const AboutMainSection = () => {
                         </div>
                         <div className="aboutData col-8">
                             <div className="right-corner-menu d-flex item-center ">
-                                <NavLink to={'/'}>Home</NavLink>
+                                <NavLink className='color-lightBlue' to={'/'}>Home</NavLink>
                                 <HiChevronRight className='rightArrow' /> About
                             </div>
                             <div className="container">
@@ -26,7 +26,7 @@ const AboutMainSection = () => {
                                 <div className="about-content">
                                     <p>Mazedan International Research Academy is an association of international scholars aimed at promoting research and development through different mediums. It brings together researchers, scientists, engineers, scholars, and students to provides a platform for the dissemination of results, new ideas, and practical experiments, which concentrate on both theory and practices, for the benefit of the common man. Mazedan aims to undertake initiatives that are global in nature, Member associations are resolved to work together to address such issues as building capacity and interest in education, research, advancing education policies and practices, and promoting the application of research outcomes around the world. Mazedan is ranked to be in the forefront in the promotion of education with cutting edge interest, active action research, and service with a smile to human concerns performing the way it believes in for a better world. Mazedan popularly acclaimed to be an all-active academic cluster of prominent scientists, professionally matured teachers, and performing researchers across India and overseas committed to promoting value and ethical research among the young research scholars and modern society. Having been backed up by the committed academic assemblage, the Mazedan could climb the academic heights in no time with the support of the authors from India and abroad who have contributed a lot in the terms of their research/ scientific/ technical papers worth presenting to the realm of its kind. Research is an essential tool for entering into the arena of the latest knowledge. It also provides a unique insight into the teaching of higher education in a scientific way. Research in science and technology must be relevant to local, social, and industrial needs, leverage the regional and local competitive advantage, and be goal-oriented. The research must be aimed to cultivate a research culture among the researchers and scientists of the world. The latest research in general and the research in science and technology, in particular, can lead to provide fuel to education towards development. The promotion of research happens to be the core and strategic aim of Mazedan. The focus of academic research in the future will be on developing economic and social factors benefitting the masses at large. This will be achieved through innovation which is the creation of better products, processes, technologies, and ideas that are commercialized in a way to benefit society. Mazedan was established in Ankara on July 29, 2009, and now New Delhi is the headquarter. It has many chapters in different universities all over the world. </p>
                                 </div>
-                                <div className="aims">
+                                <div id="aims">
                                     <h3>Aims & Objective</h3>
                                     <ul>
                                         <li> <span className="square-icon">&#10065;</span>  <p> publishes scholarly research through peer-reviewed journals, proceedings, magazines, and books</p> </li>
@@ -45,7 +45,7 @@ const AboutMainSection = () => {
                                         <li> <span className="square-icon">&#10065;</span>  <p>  World-renowned scientists and scholars are in the editorial teams of different journals. Mazedan publishes research through Mazedan Digital Library as an e-platform.</p> </li>
                                     </ul>
                                 </div>
-                                <div className="board-persons">
+                                <div id="board-persons">
                                     <div className='border-tool d-flex item-center'>
                                         <h2>MAZEDAN </h2> &nbsp;<h2> EXECUTIVE BOARD</h2>
                                     </div>
@@ -128,13 +128,13 @@ const AboutMainSection = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="forth-row">
+                                <div className="forth-row" id='BCONSTITUTION'>
                                     <div className="border-tool d-flex item-center">
                                         <h2>MAZEDAN </h2> &nbsp; <h2>BCONSTITUTION</h2>
                                     </div>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum deserunt fugiat eos ratione nesciunt laboriosam, voluptates architecto corrupti unde repellendus distinctio et maiores, qui ad doloremque ullam recusandae tempora non.</p>
                                 </div>
-                                <div className="contact" id='contact'>
+                                <div id='contact'>
                                     <div className='border-tool d-flex item-center'><h2>MAZEDAN </h2> &nbsp; <h2> CONTACTS</h2></div>
                                     <div className="address display-flex col-12">
                                         <div className="add1 col-6 display-flex flex-column">
@@ -177,9 +177,7 @@ const Wrapper = styled.section`
                 .rightArrow{
                     font-size: 20px;
                 }
-                a{
-                    color: ${({ theme }) => theme.colors.lightBlue};
-                }
+                
             }
             .about-content{
                 text-align: justify;
@@ -190,7 +188,7 @@ const Wrapper = styled.section`
                     color: ${({ theme }) => theme.colors.orange};
                 }
             }
-            .aims{
+            #aims{
                 margin: 1rem 0 1rem 1rem;
                 h3{
                     margin-left: -4%;
@@ -209,7 +207,7 @@ const Wrapper = styled.section`
                     }
                 }
             }
-            .board-persons{
+            #board-persons{
                 h2:last-child{
                     color: ${({ theme }) => theme.colors.orange};
                 }
@@ -305,7 +303,7 @@ const Wrapper = styled.section`
                     margin-top: 1.1rem;
                 }
             }
-            .contact{
+            #contact{
                 .border-tool{
                     h2:last-child{
                         color: ${({ theme }) => theme.colors.orange}

@@ -18,7 +18,7 @@ const PublicationData = () => {
                         </div>
                         <div className="middle-column col-8">
                             <div className="right-corner-menu d-flex item-center ">
-                                <NavLink to={'/'}>Home</NavLink>
+                                <NavLink className='color-lightBlue' to={'/'}>Home</NavLink>
                                 <HiChevronRight className='rightArrow' /> Publications
                             </div>
                             <div className="container">
@@ -47,7 +47,7 @@ const PublicationData = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="publish-table">
+                                <div id="publish-table">
                                     <h3>Howyou can publish?</h3>
                                     <p>Mazedan publishes the following articles with proper ISBN/ISSN. The publication fee is different for different category.</p>
                                     <table>
@@ -89,7 +89,7 @@ const PublicationData = () => {
                                     </table>
                                 </div>
                                 <hr />
-                                <LIstBookAndJournals />
+                                <LIstBookAndJournals id="list-book-journal" />
                             </div>
                         </div>
                         <div className="right-side-bar col-1">
@@ -136,14 +136,12 @@ const Wrapper = styled.section`
             .right-corner-menu{
                 justify-content: end;
                 transform: translate(-2%, -100%);
-                    a{
-                    color: ${({ theme }) => theme.colors.lightBlue};
-                    }
+                    
                     .rightArrow{
                         font-size: 20px;
                     }
             }
-            .publish-table{
+            #publish-table{
                 table, tr, th, td{
                     border: 1px solid ${({ theme }) => theme.colors.lightBlue};
                     border-collapse: collapse;

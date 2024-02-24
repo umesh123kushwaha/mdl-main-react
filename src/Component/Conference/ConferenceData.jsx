@@ -16,7 +16,7 @@ const ConferenceData = () => {
                         </div>
                         <div className="aboutData col-8">
                             <div className="right-corner-menu d-flex item-center ">
-                                <NavLink to={'/'}>Home</NavLink>
+                                <NavLink className='color-lightBlue' to={'/'}>Home</NavLink>
                                 <HiChevronRight className='rightArrow' /> Conference
                             </div>
                             <div className="container">
@@ -85,9 +85,7 @@ const Wrapper = styled.section`
                 .rightArrow{
                     font-size: 20px;
                 }
-                a{
-                    color: ${({ theme }) => theme.colors.lightBlue};
-                }
+               
             }
             .about-content{
                 text-align: justify;

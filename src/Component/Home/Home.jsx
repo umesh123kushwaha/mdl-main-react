@@ -6,6 +6,7 @@ import { BsFileEarmarkArrowDownFill, BsLock } from 'react-icons/bs'
 import { FaGlobeAsia } from 'react-icons/fa';
 import HomeContent from './HomeContent';
 import LIstBookAndJournals from './LIstBookAndJournals';
+import { HashLink } from 'react-router-hash-link';
 
 const Home = () => {
   return (
@@ -77,7 +78,7 @@ const Home = () => {
             </div>
             <div className="column2 col-6 d-flex item-center flex-column">
               <div className='col-12 border-tool'>
-                <NavLink to=''><h2 className=''>Popular</h2>&nbsp;<h2>Courses</h2></NavLink>
+                <HashLink to={'/training/#training-courses'}><h2 className=''>Popular</h2>&nbsp;<h2>Courses</h2></HashLink>
               </div>
               <div className='col-12 border-tool'>
                 <NavLink to=""> <h2 className=''>Quick</h2>&nbsp;<h2>Links</h2></NavLink>
@@ -186,6 +187,9 @@ const Wrapper = styled.section`
           font-size: 1.2rem;
           margin: 1rem 0;
           text-transform: uppercase;
+            h2:first-child{
+              color: ${({ theme }) => theme.colors.lightBlue};
+            }
             h2:last-child{
                 color: ${({ theme }) => theme.colors.orange};
                 transform: translateY(-1px);

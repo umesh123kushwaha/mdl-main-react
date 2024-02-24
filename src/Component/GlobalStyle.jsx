@@ -7,6 +7,7 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-family: 'Noto Serif', serif;
+    scroll-behavior: smooth;
 /* font-family: 'Nunito', sans-serif; */
   }
   .col-1 {
@@ -122,6 +123,9 @@ export const GlobalStyle = createGlobalStyle`
 }
 .color-orange{
     color: ${({ theme }) => theme.colors.orange};
+}
+.color-lightBlue{
+    color: ${({ theme }) => theme.colors.lightBlue};
 }
 .border-tool{
 position: relative;

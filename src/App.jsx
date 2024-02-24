@@ -14,6 +14,7 @@ import Membership from "./Component/ProMembership/Membership"
 import Publication from "./Component/Publication/Publication"
 import ServerError from "./Component/ServerError"
 import Training from "./Component/Training/Training"
+import GoTo from "./Component/GoTo"
 
 
 
@@ -21,14 +22,14 @@ function App() {
   const theme ={
 
     colors :{
-      darkBlue: "#1f4e79",
+      darkBlue: "#0a64fa",
       yellow: "#ffff00",
       MinDarkWhite: '#f5f5f5',
-      orange: "#ed7d31",
+      orange: "#fa640a",
       lightBlack: "#363636",
       white: "white",
       black: "black",
-      lightBlue: "#00b0f0",
+      lightBlue: "#0a64fa",
     }
   }
 
@@ -52,6 +53,7 @@ function App() {
           {/* <Route path="/server-error" element={<ServerError />} /> */}
         </Routes>
         <Footer />
+        <GoTo />
       </Router>
       </ThemeProvider>
   )

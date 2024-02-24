@@ -2,6 +2,7 @@ import React from 'react'
 import { FaChevronLeft, FaChevronRight, FaExternalLinkAlt } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components'
+import { HashLink } from 'react-router-hash-link';
 
 const JournalLeftColumn = () => {
     return (
@@ -12,9 +13,10 @@ const JournalLeftColumn = () => {
                         <h3>MAZEDAN PUBLICATION HOME</h3>
                     </div>
                     <div className="content-data">
-                        <div>  &#10146; <NavLink>Mazedan Books & Journals</NavLink></div>
-                        <div> &#10146; <NavLink> Publishing Policies</NavLink></div>
-                        <div> &#10146; <NavLink> FAQ</NavLink></div>
+                        <div>  &#10146; <HashLink to={''}>Mazedan Books & Journals</HashLink></div>
+                        <div> &#10146; <HashLink to={'#policy'}> Publishing Policies</HashLink></div>
+                        <div> &#10146; <HashLink to={'#faq'}> FAQ</HashLink></div>
+                        
                     </div>
                 </div>
                 <div className="second-column">

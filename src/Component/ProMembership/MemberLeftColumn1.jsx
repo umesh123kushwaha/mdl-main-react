@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import styled from 'styled-components'
 
 const MemberLeftColumn1 = () => {
@@ -12,10 +13,10 @@ const MemberLeftColumn1 = () => {
                         <h3>MAZEDAN MEMBER’S HOME</h3>
                     </div>
                     <div className="content-data">
-                        <div>  &#10146; <NavLink> Mazedan Membership</NavLink></div>
-                        <div> &#10146; <NavLink> Membership Types and Fee</NavLink></div>
-                        <div> &#10146; <NavLink> Benefits</NavLink></div>
-                        <div> &#10146; <NavLink> Terms & Conditions</NavLink></div>
+                        <div>  &#10146; <HashLink to={''}> Mazedan Membership</HashLink></div>
+                        <div> &#10146; <HashLink to={'#types-fee'}> Membership Types and Fee</HashLink></div>
+                        <div> &#10146; <HashLink to={'#benefits-row'}> Benefits</HashLink></div>
+                        <div> &#10146; <HashLink to={'#term-condition'}> Terms & Conditions</HashLink></div>
                     </div>
                 </div>
                 <div className="second-column">

@@ -18,7 +18,7 @@ const MembershipData = () => {
                         </div>
                         <div className="aboutData col-8">
                             <div className="right-corner-menu d-flex item-center ">
-                                <NavLink to={'/'}>Home</NavLink>
+                                <NavLink className='color-lightBlue' to={'/'}>Home</NavLink>
                                 <HiChevronRight className='rightArrow' /> Membership
 
                             </div>
@@ -32,7 +32,7 @@ const MembershipData = () => {
                                         <Register />
                                     </div>
                                 </div>
-                                <div className="types-fee">
+                                <div id="types-fee">
                                     <div className='heading border-tool d-flex item-center'>
                                         <h2>MEMBERSHIP </h2> &nbsp;<h2>TYPES AND FEE</h2>
                                     </div>
@@ -142,7 +142,7 @@ const MembershipData = () => {
 
 
                                 </div>
-                                <div className="benefits-row">
+                                <div id="benefits-row">
                                     <div className=" heading border-tool d-flex item-center">
                                         <h2>MAZEDAN </h2> &nbsp; <h2>P BENEFITS AND PRIVILEGES</h2>
                                     </div>
@@ -161,7 +161,7 @@ const MembershipData = () => {
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="term-condition">
+                                <div id="term-condition">
                                     <div className='heading border-tool d-flex item-center'>
                                         <h2>MAZEDAN </h2> &nbsp; <h2> TERMS & CONDITIONS</h2>
 
@@ -227,9 +227,7 @@ const Wrapper = styled.section`
                 .rightArrow{
                     font-size: 20px;
                 }
-                a{
-                    color: ${({ theme }) => theme.colors.lightBlue};
-                }
+               
             }
             .about-content{
                 text-align: justify;
@@ -240,7 +238,7 @@ const Wrapper = styled.section`
                 }
             }
         } 
-        .types-fee{
+        #types-fee{
             h2:last-child{
                 color: ${({ theme }) => theme.colors.orange};
             }
@@ -269,7 +267,7 @@ const Wrapper = styled.section`
                 }
             }
         }
-        .benefits-row{
+        #benefits-row{
             div{
                 h2:last-child{
                     color: ${({ theme }) => theme.colors.orange};
@@ -289,7 +287,7 @@ const Wrapper = styled.section`
                 }
             }
         }
-        .term-condition{
+        #term-condition{
             .border-tool{
                 h2:last-child{
                     color: ${({ theme }) => theme.colors.orange}

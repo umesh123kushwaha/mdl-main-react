@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import Clock from './Clock';
 import { FaEnvelope, FaFacebook, FaHome, FaLinkedinIn, FaPhoneAlt, FaTwitter, FaYoutube } from 'react-icons/fa'
 import { NavLink } from 'react-router-dom';
+import { MdlLogoIcon, MdlMazedanLogoIcon } from './SvgComponent/MdlSvgIcon';
+import { FaXTwitter } from "react-icons/fa6";
 
 const Header = () => {
     
@@ -19,7 +21,7 @@ const Header = () => {
                             <Clock />
                         </div>
                         <div className="follow-logo col-4 d-flex item-center">
-                            <div><NavLink to=""><FaTwitter className='social-icons' /></NavLink></div>
+                            <div><NavLink to=""><FaXTwitter className='social-icons' /></NavLink></div>
                             <div><NavLink to=""><FaYoutube className='social-icons' /> </NavLink></div>
                             <div><NavLink to=""><FaLinkedinIn className='social-icons' /></NavLink> </div>
                             <div><NavLink to=""><FaFacebook className='social-icons' /></NavLink></div>
@@ -30,15 +32,16 @@ const Header = () => {
                     <div className="container d-flex item-center" >
                         <div className="head-logo col-4 d-flex item-center">
                             <NavLink to='/' className='display-flex'>
-                                <img className='logo-img' src="./images/mazedan_white_logo1.png" alt="" />
-                                <img src="./images/MazedanHead.png" alt="" />
-
+                                {/* <img className='logo-img' src="./images/mazedan_white_logo1.png" alt="" /> */}
+                               
+                                <MdlMazedanLogoIcon />
+                                 <img src="./images/MazedanHead.png" alt="" />
+                                                                                                                                    
                             </NavLink>
                         </div>
                         <div className="head-logo2 col-4 display-flex">
                             <NavLink className='t-decoration display-flex flex-column'>
-                                <div><img src="./images/mdl_white_logo.png" alt="" /></div>
-                                <div><h4>MAZEDAN DIGITAL LIBRARY</h4></div>
+                                <MdlLogoIcon />
                             </NavLink>
                         </div>
                         <div className="head-logo3 col-4 display-flex">
@@ -105,19 +108,22 @@ const Wrapper = styled.section`
                  a{
                     height: 100%;
                  
-                .logo-img{
-                   height: 100%;
+                svg{
+                    height: 7rem;
+                    width: 100%;
+                    color: ${({ theme }) => theme.colors.white};
                 }}
             }
             .head-logo2{
                 height: 8rem;
-                justify-content: end;
                     a{
                         color: ${({ theme }) => theme.colors.white};
                     }
-                    img{
-                        height: 4rem;
+                    svg{
+                        height: 14rem;
+                        width: 100%;
                     }
+                    
             }
             .head-logo3{
                 height: 8rem;

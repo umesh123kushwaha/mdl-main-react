@@ -19,11 +19,11 @@ const TrainingData = () => {
                         </div>
                         <div className="middle-column col-8">
                             <div className="right-corner-menu d-flex item-center ">
-                                <NavLink to={'/'}>Home</NavLink>
+                                <NavLink className='color-lightBlue' to={'/'}>Home</NavLink>
                                 <HiChevronRight className='rightArrow' /> Training
 
                             </div>
-                            <div className="container">
+                            <div className="container" id='training-courses'>
                                 <div className="upSection">
                                     <div className="heading border-tool d-flex item-center">
                                         <h2>MAZEDAN </h2> &nbsp;<h2 className='color-orange'>TRAINING & COURSES</h2>
@@ -194,9 +194,7 @@ const Wrapper = styled.section`
                 .right-corner-menu{
                     justify-content: end;
                     transform: translate(-2%, -100%);
-                        a{
-                        color: ${({ theme }) => theme.colors.lightBlue};
-                        }
+                       
                         .rightArrow{
                             font-size: 20px;
                         }

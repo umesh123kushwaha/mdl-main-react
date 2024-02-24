@@ -18,7 +18,7 @@ const JournalData = () => {
                         </div>
                         <div className="aboutData col-8">
                             <div className="right-corner-menu d-flex item-center ">
-                                <NavLink to={'/'}>Home</NavLink>
+                                <NavLink className='color-lightBlue' to={'/'}>Home</NavLink>
                                 <HiChevronRight className='rightArrow' /> Journals
                             </div>
                             <div className="container">
@@ -31,19 +31,19 @@ const JournalData = () => {
                                 <div className="select-journal-column">
                                     <SelectJournals />
                                 </div>
-                                <div className="books-row">
+                                <div className="books-row" id='journalList'>
                                     <LIstBookAndJournals />
                                 </div>
                                 <div className="forth-row">
                                     <div className="border-tool d-flex item-center">
                                         <h2>PUBLISHING</h2> &nbsp; <h2 className='color-orange'>POLICIES</h2>
                                     </div>
-                                    <ol className='container'>
+                                    <ol className='container' id='policy'>
                                         <li>ReviewPolicy- Data can be taken from Mazedan.com website</li>
                                         <li>PlagiarismPolicy- Data can be taken from Mazedan.com website</li>
                                     </ol>
                                 </div>
-                                <div className="contact">
+                                <div className="contact" id='faq'>
                                     <div className='border-tool d-flex item-center'>
                                         <h2>FREQUENTLY </h2> &nbsp; <h2 className='color-orange'>ASKED QUESTIONS</h2>
                                     </div>
@@ -82,9 +82,7 @@ const Wrapper = styled.section`
                 .rightArrow{
                     font-size: 20px;
                 }
-                a{
-                    color: ${({ theme }) => theme.colors.lightBlue};
-                }
+            
             }
             .about-content{
                 text-align: justify;

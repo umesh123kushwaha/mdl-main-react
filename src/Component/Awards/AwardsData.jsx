@@ -19,7 +19,7 @@ const AwardsData = () => {
                         </div>
                         <div className="middle-column col-8">
                             <div className="right-corner-menu d-flex item-center ">
-                                <NavLink to={'/'}>Home</NavLink>
+                                <NavLink className='color-lightBlue' to={'/'}>Home</NavLink>
                                 <HiChevronRight className='rightArrow' /> Awards
 
                             </div>
@@ -130,7 +130,7 @@ const AwardsData = () => {
 
 
                                 </div>
-                                <div className="awardees-row">
+                                <div id="awardees-row">
                                     <div className=" heading border-tool d-flex item-center">
                                         <h2>MAZEDAN </h2> &nbsp; <h2 className='color-orange'>AWARDEES</h2>
                                     </div>
@@ -298,7 +298,7 @@ const Wrapper = styled.section`
                         }
                        
                     }
-                    .awardees-row{
+                    #awardees-row{
                         div{
                             h2:last-child{
                                 color: ${({ theme }) => theme.colors.orange};

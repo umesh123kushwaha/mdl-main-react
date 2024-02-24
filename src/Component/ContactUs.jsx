@@ -17,7 +17,7 @@ const ContactUs = () => {
                         </div>
                         <div className="aboutData col-8">
                                 <div className="right-corner-menu d-flex item-center ">
-                                    <NavLink to={'/'}>Home</NavLink>
+                                    <NavLink className='color-lightBlue' to={'/'}>Home</NavLink>
                                     <HiChevronRight className='rightArrow' /> contact
                                    
                                 </div>

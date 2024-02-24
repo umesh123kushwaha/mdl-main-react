@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import styled from 'styled-components'
 
 const AboutLeftColumn1 = () => {
@@ -11,10 +12,10 @@ const AboutLeftColumn1 = () => {
                 <h3>KNOW ABOUT MAZEDAN</h3>
             </div>
             <div className="content-data">
-                    <div>  &#10146; <NavLink to={""}> Mazedan at a Glance</NavLink></div>
-                    <div > &#10146; <NavLink> Executive Board</NavLink></div>
-                    <div> &#10146; <NavLink> Constitution</NavLink></div>
-                    <div> &#10146; <NavLink> Contacts</NavLink></div>
+                    <div>  &#10146; <HashLink to={''}> Mazedan at a Glance</HashLink></div>
+                    <div > &#10146; <HashLink to={'#board-persons'}> Executive Board</HashLink></div>
+                    <div> &#10146; <HashLink to={'#BCONSTITUTION'}> Constitution</HashLink></div>
+                    <div> &#10146; <HashLink to={'#contact'}> Contacts</HashLink></div>
             </div>
         </div>
         <div className="second-column">

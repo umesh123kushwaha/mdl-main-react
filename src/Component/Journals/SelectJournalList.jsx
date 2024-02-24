@@ -7,6 +7,7 @@ const SelectJournalList = () => {
 
     const { hits, nbPages, isLoading, removeItem } = useGlobalContext();
 
+        console.log("hits", hits);
     if (isLoading) {
         return (
             <h2>Loading...</h2>

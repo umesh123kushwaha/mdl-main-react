@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import styled from 'styled-components'
 
 const PublicationLeftColumn = () => {
@@ -11,9 +12,9 @@ const PublicationLeftColumn = () => {
                         <h3>MAZEDAN PUBLICATION HOME</h3>
                     </div>
                     <div className="content-data">
-                        <div>  &#10146; <NavLink>About Mazedan Publication House</NavLink></div>
-                        <div> &#10146; <NavLink> Publication Procedure</NavLink></div>
-                        <div> &#10146; <NavLink> List of Books & Journals</NavLink></div>
+                        <div>  &#10146; <HashLink to={''}>About Mazedan Publication House</HashLink></div>
+                        <div> &#10146; <HashLink to={'#publish-table'}> Publication Procedure</HashLink></div>
+                        <div> &#10146; <HashLink to={'#publish-table'}> List of Books & Journals</HashLink></div>
                     </div>
                 </div>
                 <div className="second-column">
