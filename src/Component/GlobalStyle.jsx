@@ -104,6 +104,12 @@ export const GlobalStyle = createGlobalStyle`
 .display-grid{
     display: grid;
 }
+.g-1{
+    gap: 1rem;
+}
+.g-2{
+    gap: 2rem;
+}
 .button{
     border: none;
     outline: none;

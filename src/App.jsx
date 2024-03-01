@@ -15,6 +15,7 @@ import Publication from "./Component/Publication/Publication"
 import ServerError from "./Component/ServerError"
 import Training from "./Component/Training/Training"
 import GoTo from "./Component/GoTo"
+import JournalResult from "./Component/Journals/SearchJournals/JournalResult"
 
 
 
@@ -50,6 +51,7 @@ function App() {
           <Route path="/training" element={<Training />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/conference" element={<Conference /> } />
+          <Route path="/journal-page" element={<JournalResult />} />
           {/* <Route path="/server-error" element={<ServerError />} /> */}
         </Routes>
         <Footer />

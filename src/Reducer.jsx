@@ -30,7 +30,7 @@ const Reducer = (state, action) => {
         case "SEARCH_JOURNAL":
             return{
                 ...state,
-                query: action.payload,
+                search: action.payload,
             };
 
         

@@ -2,12 +2,12 @@ import React, { useContext, useEffect, useReducer } from "react";
 import Reducer from "./Reducer";
 
 const AppContext = React.createContext();
-let API = "https://hn.algolia.com/api/v1/search?";
-    // let API = "https://mazedan.tech/api/journal-list";
+// let API = "https://hn.algolia.com/api/v1/search?";
+    let API = "https://mazedandigitallibrary.online/api/journal-list";
 
 const initialState = {
     isloading: true,
-    query: "CSS",
+    search: "r",
     nbPages: 0,
     page: 0,
     hits: [],  
@@ -60,10 +60,10 @@ const [state, dispatch] = useReducer(Reducer, initialState);
     };
 
     useEffect(() => {
-      fetchAPIData(`${API}query=${state.query}&page=${state.page}`);
+      fetchAPIData(`${API}search=${state.search}&page=${state.page}`);
     
       
-    }, [state.query, state.page]);
+    }, [state.search, state.page]);
 
 return <AppContext.Provider value={{...state, removeItem, searchJournal, getPrevPage, getNextPage}}>
         {children}
