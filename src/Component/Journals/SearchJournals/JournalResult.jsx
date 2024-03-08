@@ -1,8 +1,13 @@
 import React from 'react'
 import HeroSection from '../../HeroSection'
 import SearchJournalData from './SearchJournalData.jsx';
+import { useGlobalContext } from '../../../Context.jsx';
 
 const JournalResult = () => {
+
+  const { hits, nbPages, isLoading, removeItem } = useGlobalContext();
+  console.log("hourhdjfk", hits);
+
   const data ={
 
     title: "TRANSACTIONS ON ENGINEERING SYSTEMS DESIGN",

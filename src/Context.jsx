@@ -3,7 +3,8 @@ import Reducer from "./Reducer";
 
 const AppContext = React.createContext();
 // let API = "https://hn.algolia.com/api/v1/search?";
-    let API = "https://mazedandigitallibrary.online/api/journal-list";
+// let API = "https://mazedandigitallibrary.online/api/publish-book-list?";
+    let API = "https://mazedandigitallibrary.online/api/journal-list?";
 
 const initialState = {
     isloading: true,
@@ -31,7 +32,7 @@ const [state, dispatch] = useReducer(Reducer, initialState);
             dispatch({
                 type: "GET_SERVICES",
                 payload:{
-                    hits: data.hits,
+                    hits: data,
                     nbPages: data.nbPages,
                 }
             })

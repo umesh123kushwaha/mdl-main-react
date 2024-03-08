@@ -110,6 +110,12 @@ export const GlobalStyle = createGlobalStyle`
 .g-2{
     gap: 2rem;
 }
+.bg-lb{
+    background-color: ${({ theme }) => theme.colors.lightBlue};
+}
+.bg-org{
+    background-color: ${({ theme }) => theme.colors.orange};
+}
 .button{
     border: none;
     outline: none;
@@ -132,6 +138,10 @@ export const GlobalStyle = createGlobalStyle`
 }
 .color-lightBlue{
     color: ${({ theme }) => theme.colors.lightBlue};
+}
+.color-white{
+    color: ${({ theme }) => theme.colors.white};
+
 }
 .border-tool{
 position: relative;

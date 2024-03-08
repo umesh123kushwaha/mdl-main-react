@@ -1,8 +1,13 @@
 import React from 'react'
 import { FaExternalLinkAlt } from 'react-icons/fa';
+import { FaBoxArchive } from "react-icons/fa6";
+import { MdErrorOutline } from "react-icons/md";
+import { IoIosPeople } from "react-icons/io";
+import { BsQuestionCircle } from "react-icons/bs";
 import { NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import styled from 'styled-components';
+import { HiOutlineUpload } from 'react-icons/hi';
 
 const SearchJournalLeft = () => {
   return (
@@ -14,10 +19,11 @@ const SearchJournalLeft = () => {
             </h3>
           </div>
           <div className="content-data">
-            <div>  &#10146; <HashLink to={''}>About the Journal</HashLink></div>
-            <div> &#10146; <HashLink to={'#policy'}> Editorial Board</HashLink></div>
-            <div> &#10146; <HashLink to={'#faq'}> Latest & Archives</HashLink></div>
-            <div> &#10146; <HashLink to={'#faq'}> FAQ</HashLink></div>
+            <div>  <MdErrorOutline /> <HashLink to={''}>About the Journal</HashLink></div>
+            <div> <IoIosPeople /> <HashLink to={'/editors'}> Editorial Board</HashLink></div>
+            <div> <HiOutlineUpload /> <HashLink to={''}> Submission & Tracking</HashLink></div>
+            <div> <FaBoxArchive /> <HashLink to={'#faq'}> Latest & Archives</HashLink></div>
+            <div> <BsQuestionCircle /> <HashLink to={'#faq'}> FAQ</HashLink></div>
 
           </div>
         </div>
@@ -112,7 +118,28 @@ const Wrapper = styled.section`
    
   margin: 2rem;
   font-size: 1.3rem;
-  
+    .column1{
+      .content-data{
+        padding: 1rem 0;
+        div{
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          padding: 0 1rem;
+          font-size: 1.5rem;
+          transition: all 0.2s;
+
+          &:hover{
+            background-color: ${({ theme }) => theme.colors.orange};
+            color: ${({ theme }) => theme.colors.white};
+
+          }
+          &:hover a{
+            color: ${({ theme }) => theme.colors.white};
+          }
+        }
+      }
+    }
     .second-column{
         margin-top: 5rem;
         width: 22rem;
