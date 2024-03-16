@@ -9,9 +9,9 @@ const ConferenceLeftColumn = () => {
             <div className="main ">
                 <div className='first-column'>
                     <div className="column-heading display-flex">
-                        <h3>MAZEDAN EVENTS HOME</h3>
+                        <h2>MAZEDAN EVENTS HOME</h2>
                     </div>
-                    <div className="content-data">
+                    <div className="content-data fs-1-5">
                         <div>  &#10146; <NavLink>Conferences & Workshops</NavLink></div>
                         <div> &#10146; <NavLink> Past Conferences</NavLink></div>
                         <div> &#10146; <NavLink> Conference Collaboration</NavLink></div>
@@ -24,7 +24,7 @@ const ConferenceLeftColumn = () => {
                 </div>
                 <div className="third-column">
                     <div className="column-heading display-flex">
-                        <h3>Journal News and Updates</h3>
+                        <h2>Journal News and Updates</h2>
                     </div>
                     <div className="content-data">
                         <marquee width="100%" height="200px" direction="up" scrolldelay="150">
@@ -88,7 +88,7 @@ const ConferenceLeftColumn = () => {
                 </div>
                 <div className="fourth-column">
                     <div className="column-heading display-flex">
-                        <h3>Proceedings Publication</h3>
+                        <h2>Proceedings Publication</h2>
                     </div>
                     <div className="content-data">
                             <p className='text-center'>Benefit from our experience and offered services to turn your conference publication into worldwide accessible science</p>
@@ -113,7 +113,7 @@ const ConferenceLeftColumn = () => {
                 </div>
                 <div className="last-column">
                     <div className="column-heading display-flex">
-                        <h3>Become the Conference Partner</h3>
+                        <h2>Become the Conference Partner</h2>
                     </div>
                     <div className="content-data">
                             <p className='text-center'>Mazedan welcomes you to become our conference partner.</p>

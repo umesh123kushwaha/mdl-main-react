@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const LIstBookAndJournals = () => {
+    useEffect(() => {
+        AOS.init({
+        duration: 1000,
+        });
+      }, []);
     return (
         <Wrapper>
             <div className="main">
@@ -25,17 +32,18 @@ const LIstBookAndJournals = () => {
                         </div>
 
                         <div className="show-data col-12">
-                            <div className='d-flex item-center space-between flex-wrap'>
-                                <div className="books "><img src="./images/books-pic/1.png" alt="" /></div>
-                                <div className="books "><img src="./images/books-pic/2.png" alt="" /></div>
-                                <div className="books "><img src="./images/books-pic/3.png" alt="" /></div>
-                                <div className="books "><img src="./images/books-pic/4.png" alt="" /></div>
-                                <div className="books "><img src="./images/books-pic/5.png" alt="" /></div>
-                                <div className="books "><img src="./images/books-pic/6.png" alt="" /></div>
-                                <div className="books "><img src="./images/books-pic/7.png" alt="" /></div>
-                                <div className="books "><img src="./images/books-pic/8.png" alt="" /></div>
-                                <div className="books "><img src="./images/books-pic/9.png" alt="" /></div>
-                                <div className="books "><img src="./images/books-pic/2.png" alt="" /></div>
+                            <div className='d-flex item-center space-between flex-wrap' >
+                                <div className="books "data-aos="zoom-out"><img src="./images/books-pic/1.png" alt="" /></div>
+                                <div className="books 
+                                "data-aos="zoom-out"><img src="./images/books-pic/2.png" alt="" /></div>
+                                <div className="books" data-aos="zoom-out"><img src="./images/books-pic/3.png" alt="" /></div>
+                                <div className="books" data-aos="zoom-out"><img src="./images/books-pic/4.png" alt="" /></div>
+                                <div className="books" data-aos="zoom-out"><img src="./images/books-pic/5.png" alt="" /></div>
+                                <div className="books" data-aos="zoom-out"><img src="./images/books-pic/6.png" alt="" /></div>
+                                <div className="books" data-aos="zoom-out"><img src="./images/books-pic/7.png" alt="" /></div>
+                                <div className="books" data-aos="zoom-out"><img src="./images/books-pic/8.png" alt="" /></div>
+                                <div className="books" data-aos="zoom-out"><img src="./images/books-pic/9.png" alt="" /></div>
+                                <div className="books" data-aos="zoom-out"><img src="./images/books-pic/2.png" alt="" /></div>
                                 
                             </div>
                         </div>

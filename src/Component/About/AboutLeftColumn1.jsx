@@ -1,9 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import styled from 'styled-components'
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 const AboutLeftColumn1 = () => {
+    useEffect(() => {
+    AOS.init({
+      
+      duration: 1000,
+      
+    });
+  }, []);
   return (
    <Wrapper>
     <div className="main ">
@@ -11,7 +21,7 @@ const AboutLeftColumn1 = () => {
             <div className="column-heading display-flex">
                 <h3>KNOW ABOUT MAZEDAN</h3>
             </div>
-            <div className="content-data">
+            <div className="content-data fs-1-5">
                     <div>  &#10146; <HashLink to={''}> Mazedan at a Glance</HashLink></div>
                     <div > &#10146; <HashLink to={'#board-persons'}> Executive Board</HashLink></div>
                     <div> &#10146; <HashLink to={'#BCONSTITUTION'}> Constitution</HashLink></div>
@@ -23,7 +33,7 @@ const AboutLeftColumn1 = () => {
                     <h3>ACHIEVEMENTS</h3>
                 </div>
                 <div className="content-data">
-                    <div className="container">
+                    <div className="container" data-aos="zoom-in">
                         <div className='d-flex'><span>&#10065;</span><NavLink><p>Mazedan is promoting research with more than 2000+ scholars.</p></NavLink></div>
                         <div className='d-flex'><span>&#10065;</span><NavLink><p>Research Show Growing Awareness and Uptake of Open Access Publishing By Authors</p></NavLink></div>
                     </div>
@@ -36,9 +46,7 @@ const AboutLeftColumn1 = () => {
 }
 const Wrapper = styled.section`
     .main{
-        .content-data{
-            font-size: 1.3rem;
-        }
+        
     }
  .second-column{
            margin-top: 5rem;

@@ -133,6 +133,12 @@ export const GlobalStyle = createGlobalStyle`
     cursor: pointer;
     
 }
+.fs-1-5{
+    font-size: 1.5rem;
+}
+.fs-1-2{
+    font-size: 1.2rem;
+}
 .color-orange{
     color: ${({ theme }) => theme.colors.orange};
 }
@@ -168,10 +174,11 @@ position: relative;
 }
 .column-heading{
     background-color: ${({ theme }) => theme.colors.lightBlue};
-    height: 2rem;
+    height: 2.5rem;
     color: ${({ theme }) => theme.colors.white};
 }
 .content-data{
+    font-size: 1.5rem;
     padding: 1rem;
     line-height: 2rem;
     border-top: 5px solid ${({ theme }) => theme.colors.orange};

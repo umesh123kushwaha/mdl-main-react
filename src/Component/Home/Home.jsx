@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { HiUserGroup } from 'react-icons/hi';
@@ -7,8 +7,17 @@ import { FaGlobeAsia } from 'react-icons/fa';
 import HomeContent from './HomeContent';
 import LIstBookAndJournals from './LIstBookAndJournals';
 import { HashLink } from 'react-router-hash-link';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init({
+      
+      duration: 700,
+      
+    });
+  }, []);
   return (
     <Wrapper>
       <div className='main-home col-12'>
@@ -66,25 +75,25 @@ const Home = () => {
         <div className="container">
           <div className="links col-12 display-flex">
             <div className="column1 col-6 d-flex item-center flex-column">
-              <div className='col-12 border-tool'>
-                <NavLink to=''> <h2 className=''>Our</h2>&nbsp;<h2>services</h2></NavLink>
+              <div className='col-12 border-tool' >
+                <NavLink to='' data-aos="fade-right" data-aos-easing="ease-in-sine"> <h2 className=''>Our</h2>&nbsp;<h2>services</h2></NavLink>
               </div>
               <div className='col-12 border-tool'>
-                <NavLink to=''><h2 className=''>Invention</h2>&nbsp;<h2>That Change The World</h2></NavLink>
+                <NavLink to=''data-aos="fade-right" data-aos-easing="ease-in-sine"><h2 className=''>Invention</h2>&nbsp;<h2>That Change The World</h2></NavLink>
               </div>
               <div className='col-12 border-tool'>
-                <NavLink to=""><h2 className=''>What</h2>&nbsp;<h2>People Say</h2></NavLink>
+                <NavLink to=""data-aos="fade-right" data-aos-easing="ease-in-sine"><h2 className=''>What</h2>&nbsp;<h2>People Say</h2></NavLink>
               </div>
             </div>
             <div className="column2 col-6 d-flex item-center flex-column">
               <div className='col-12 border-tool'>
-                <HashLink to={'/training/#training-courses'}><h2 className=''>Popular</h2>&nbsp;<h2>Courses</h2></HashLink>
+                <HashLink to={'/training/#training-courses'} data-aos="fade-left" data-aos-easing="ease-in-sine"><h2 className=''>Popular</h2>&nbsp;<h2>Courses</h2></HashLink>
               </div>
               <div className='col-12 border-tool'>
-                <NavLink to=""> <h2 className=''>Quick</h2>&nbsp;<h2>Links</h2></NavLink>
+                <NavLink to="" data-aos="fade-left" data-aos-easing="ease-in-sine"> <h2 className=''>Quick</h2>&nbsp;<h2>Links</h2></NavLink>
               </div>
               <div className='col-12 border-tool'>
-                <NavLink to=''><h2 className=''>Frequently</h2>&nbsp;<h2>Ask Questions</h2></NavLink>
+                <NavLink to='' data-aos="fade-left" data-aos-easing="ease-in-sine"><h2 className=''>Frequently</h2>&nbsp;<h2>Ask Questions</h2></NavLink>
               </div>
             </div>
           </div>

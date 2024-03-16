@@ -10,7 +10,7 @@ const MemberLeftColumn1 = () => {
             <div className="main ">
                 <div className='first-column'>
                     <div className="column-heading display-flex">
-                        <h3>MAZEDAN MEMBER’S HOME</h3>
+                        <h2>MAZEDAN MEMBER’S HOME</h2>
                     </div>
                     <div className="content-data">
                         <div>  &#10146; <HashLink to={''}> Mazedan Membership</HashLink></div>
@@ -21,7 +21,7 @@ const MemberLeftColumn1 = () => {
                 </div>
                 <div className="second-column">
                     <div className="column-heading display-flex">
-                        <h3>BENEFITS</h3>
+                        <h2>BENEFITS</h2>
                     </div>
                     <div className="content-data">
                         <p>As a member of Mazedan, you'll receive access to select content, research guide, article writing guide, plagiarism check facility, product discounts, and more.</p>
@@ -29,7 +29,7 @@ const MemberLeftColumn1 = () => {
                 </div>
                 <div className="third-column">
                     <div className="column-heading display-flex">
-                        <h3>Member's News and Updates</h3>
+                        <h2>Member's News and Updates</h2>
                     </div>
                     <div className="content-data">
                         <marquee width="100%" height="200px" direction="up" scrolldelay="150">
@@ -92,7 +92,7 @@ const MemberLeftColumn1 = () => {
                     </div>
                 </div>
                 <div className="fifth-column">
-                    <div className="features container">
+                    <div className="features container content-data">
                         <h4>Features Required:</h4>
                         <ul>
 
@@ -109,20 +109,22 @@ const MemberLeftColumn1 = () => {
 const Wrapper = styled.section`
 
     .main{
+          .content-data{
+                line-height: normal;
+                font-size: 1.5rem;
+            }
         .second-column{
             background-color: #bdd7ee;
             margin-top: 5rem;
             color: ${({ theme }) => theme.colors.orange};
-            .content-data{
-                line-height: normal;
-            }
+          
         }
         .third-column{
             /* background-color: #bdd7ee; */
             margin-top: 5rem;
             /* color: ${({ theme }) => theme.colors.orange}; */
             .content-data{
-            line-height: normal;
+            /* line-height: normal; */
                 .scroll-data {
                     margin-top: 1rem;
                     div:first-child{
@@ -139,6 +141,9 @@ const Wrapper = styled.section`
             background-color:${({ theme }) => theme.colors.orange};
             font-size: 1.3rem;
             margin-top: 30rem ;
+            .content-data{
+                background: none;
+            }
             ul{
                 margin-left: 1rem;
                 padding: 1rem 0;
