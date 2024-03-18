@@ -5,16 +5,15 @@ import { NavLink } from 'react-router-dom'
 import AboutLeftColumn1 from './AboutLeftColumn1'
 import { HiChevronRight } from 'react-icons/hi'
 import AOS from "aos";
-import "aos/dist/aos.css";
 
 const AboutMainSection = () => {
     useEffect(() => {
         AOS.init({
-          
-          duration: 1000,
-        
+
+            duration: 1000,
+
         });
-      }, []);
+    }, []);
     return (
         <Wrapper>
             <div className="mainAbout">
@@ -36,7 +35,7 @@ const AboutMainSection = () => {
                                     <p>Mazedan International Research Academy is an association of international scholars aimed at promoting research and development through different mediums. It brings together researchers, scientists, engineers, scholars, and students to provides a platform for the dissemination of results, new ideas, and practical experiments, which concentrate on both theory and practices, for the benefit of the common man. Mazedan aims to undertake initiatives that are global in nature, Member associations are resolved to work together to address such issues as building capacity and interest in education, research, advancing education policies and practices, and promoting the application of research outcomes around the world. Mazedan is ranked to be in the forefront in the promotion of education with cutting edge interest, active action research, and service with a smile to human concerns performing the way it believes in for a better world. Mazedan popularly acclaimed to be an all-active academic cluster of prominent scientists, professionally matured teachers, and performing researchers across India and overseas committed to promoting value and ethical research among the young research scholars and modern society. Having been backed up by the committed academic assemblage, the Mazedan could climb the academic heights in no time with the support of the authors from India and abroad who have contributed a lot in the terms of their research/ scientific/ technical papers worth presenting to the realm of its kind. Research is an essential tool for entering into the arena of the latest knowledge. It also provides a unique insight into the teaching of higher education in a scientific way. Research in science and technology must be relevant to local, social, and industrial needs, leverage the regional and local competitive advantage, and be goal-oriented. The research must be aimed to cultivate a research culture among the researchers and scientists of the world. The latest research in general and the research in science and technology, in particular, can lead to provide fuel to education towards development. The promotion of research happens to be the core and strategic aim of Mazedan. The focus of academic research in the future will be on developing economic and social factors benefitting the masses at large. This will be achieved through innovation which is the creation of better products, processes, technologies, and ideas that are commercialized in a way to benefit society. Mazedan was established in Ankara on July 29, 2009, and now New Delhi is the headquarter. It has many chapters in different universities all over the world. </p>
                                 </div>
                                 <div id="aims">
-                                    <h3  data-aos="fade-left">Aims & Objective</h3>
+                                    <h3 data-aos="fade-left">Aims & Objective</h3>
                                     <ul>
                                         <li data-aos="fade-up" data-aos-easing="ease-in-sine"> <span className="square-icon">&#10065;</span>  <p> publishes scholarly research through peer-reviewed journals, proceedings, magazines, and books</p> </li>
                                         <li data-aos="fade-up" data-aos-easing="ease-in-sine"> <span className="square-icon">&#10065;</span>  <p>undertakes and carries on research and development work through the establishment of laboratories, experiment centers</p> </li>
@@ -64,7 +63,7 @@ const AboutMainSection = () => {
                                             The Board meets three times a year, normally in the months of April, September and December; the exact dates of which are decided upon by the board.As with the governing council, the distribution of the total number of votes in the executive board is now being calculated both on membership and contribution. The dignitaries and governing body members are elected for a five-year term of office within their respective lists and sub-lists and are approved by the governing council.</p>
                                     </div>
                                     <div className="picture col-12 d-flex item-center">
-                                        <div className='col-3'  data-aos="fade-up">
+                                        <div className='col-3' data-aos="fade-up">
                                             <div className='image'>
                                                 <img src="./images/mazedanStaffPic/1.png" alt="" />
                                                 <div className="overlay col-12 d-flex">
@@ -150,7 +149,7 @@ const AboutMainSection = () => {
                                             <h4>REGISTERED OFFICE</h4>
                                             <p className='text-center'>J3, Abul Fazal Enclave, Part-1, Okhla, Delhi-110025 India | Tel: +91 9532485166</p>
                                         </div>
-                                        <div className="add2 col-6 display-flex flex-column fs-1-2"  data-aos="fade-right">
+                                        <div className="add2 col-6 display-flex flex-column fs-1-2" data-aos="fade-right">
                                             <h4>HEAD OFFICE</h4>
                                             <p className='text-center'>Oğuzlar Street 184/2, Yenimahalle, Ankara- 06170 Turkey </p>
                                         </div>

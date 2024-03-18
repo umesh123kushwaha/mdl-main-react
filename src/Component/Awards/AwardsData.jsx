@@ -3,10 +3,18 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import { HiChevronRight } from 'react-icons/hi';
 import AwardsLeftColumn from './AwardsLeftColumn';
-
+import AOS from "aos";
+import { useEffect } from 'react';
 
 
 const AwardsData = () => {
+    useEffect(() => {
+        AOS.init({
+
+            duration: 1000,
+
+        });
+    }, []);
     return (
         <Wrapper>
             <div className="mainAbout">
@@ -28,101 +36,101 @@ const AwardsData = () => {
                                     <div className="heading border-tool d-flex item-center">
                                         <h2>MAZEDAN </h2> &nbsp;<h2 className='color-orange'>AWARDS</h2>
                                     </div>
-                                    <div className="about-content">
+                                    <div className="about-content fs-1-2">
                                         <p>Mazedan International Research Academy gives the awards in different fields every year. The academy find the young brains and motivate them to do research. The awards are given at national level. Whether you are an Inspiring teacher, scientist, creative aspirants, curious students or researcher; we are cordially inviting you to join the academy and learn about ongoing researches in the field. Since its inception in 2010, the Mazedan Awards has sought to encourage innovation in the use and mobilization of biodiversity data shared through the Mazedan network. Calls for nominations go out each spring, and interested students must submit applications to the Head of Delegation through online process. The national delegations are responsible for forwarding the nominations to the Mazedan Secretariat. Graduate students wishing to be considered for the nominations should consult the websites. The Mazedan Secretariat and national Participants whose nominees are selected to receive the award are announced just before annual Governing Board meeting.</p>
 
                                     </div>
                                 </div>
-                                <hr/>
-                                <div className="research-award">
+                                <hr data-aos="fade-up" />
+                                <div className="research-award fs-1-2">
                                     <div className='heading-young-section d-flex item-center'>
-                                        <h3 className='color-orange'>MAZEDAN YOUNG RESEARCHER AWARD</h3>
+                                        <h3 data-aos="fade-up" className='color-orange'>MAZEDAN YOUNG RESEARCHER AWARD</h3>
                                     </div>
                                     <div className="membership-details">
-                                        <p>This Scheme is instituted by the academy to recognize and reward young Indian scientists, below the age of 40 years, with outstanding track record in different fields, a deep commitment to find innovative solutions to major problems related to human diseases and potential for high quality research. Applicants must have a regular position in a University / Organization / Institute in their country and should be engaged in research and development and have publications arising from research done as an independent investigator in the country.</p>
+                                        <p data-aos="fade-up">This Scheme is instituted by the academy to recognize and reward young Indian scientists, below the age of 40 years, with outstanding track record in different fields, a deep commitment to find innovative solutions to major problems related to human diseases and potential for high quality research. Applicants must have a regular position in a University / Organization / Institute in their country and should be engaged in research and development and have publications arising from research done as an independent investigator in the country.</p>
                                         <div>
-                                            <h3>Eligibility</h3>
-                                            <p>Applicant below the age of 40 years</p>
+                                            <h3 data-aos="fade-up">Eligibility</h3>
+                                            <p data-aos="fade-up">Applicant below the age of 40 years</p>
                                             <ul className='container'>
-                                                <li>Scientist from Academic and Research Institutes across India</li>
-                                                <li>Researchers residing in India</li>
-                                                <li>An individual who is a doctoral candidate, or who received the degree not more than five (5) years prior to submission due date. Co-authorship is acceptable provided that the Young Researcher applicant is the primary author.</li>
+                                                <li data-aos="fade-up">Scientist from Academic and Research Institutes across India</li>
+                                                <li data-aos="fade-up">Researchers residing in India</li>
+                                                <li data-aos="fade-up">An individual who is a doctoral candidate, or who received the degree not more than five (5) years prior to submission due date. Co-authorship is acceptable provided that the Young Researcher applicant is the primary author.</li>
                                             </ul>
                                         </div>
                                         <div>
-                                            <h3>Selection</h3>
-                                            <p>All applications will be subjected to a review process</p>
+                                            <h3 data-aos="fade-up">Selection</h3>
+                                            <p data-aos="fade-up">All applications will be subjected to a review process</p>
                                             <ul className='container'>
-                                                <li>An awards subcommittee selected by the Executive Committee will determine the winners based on the submitted nominations.</li>
-                                                <li>Awards will be presented at the annual function on national science day. All finalists will be subject to a background check.</li>
+                                                <li data-aos="fade-up">An awards subcommittee selected by the Executive Committee will determine the winners based on the submitted nominations.</li>
+                                                <li data-aos="fade-up">Awards will be presented at the annual function on national science day. All finalists will be subject to a background check.</li>
                                             </ul>
                                         </div>
                                         <div>
-                                            <h3>Nature of Award:</h3>
+                                            <h3 data-aos="fade-up">Nature of Award:</h3>
                                             <ul className='container'>
-                                                <li>Recipients of the award receive a certificate of recognition.</li>
-                                                <li>Recipients will get the life membership of Mazedan.</li>
-                                                <li>No cash prize will be given.</li>
+                                                <li data-aos="fade-up">Recipients of the award receive a certificate of recognition.</li>
+                                                <li data-aos="fade-up">Recipients will get the life membership of Mazedan.</li>
+                                                <li data-aos="fade-up">No cash prize will be given.</li>
                                             </ul>
                                         </div>
-                                        <h3>Processing Fee</h3>
-                                        <p>An amount of Rs. 500/- has to be deposited by the applicant through online transfer</p>
+                                        <h3 data-aos="fade-up">Processing Fee</h3>
+                                        <p data-aos="fade-up">An amount of Rs. 500/- has to be deposited by the applicant through online transfer</p>
                                         <div>
-                                        <h3>Nominations:</h3>
-                                        <p>Requirements and content recommendations include the following</p>
-                                        <ul className='container'>
-                                                <li>At least two supporting letters from colleagues which state why the nominator feels the nominee is deserving of the award (with specific supporting examples given)</li>
-                                                <li>Resume (or equivalent)</li>
+                                            <h3 data-aos="fade-up">Nominations:</h3>
+                                            <p data-aos="fade-up">Requirements and content recommendations include the following</p>
+                                            <ul className='container'>
+                                                <li data-aos="fade-up">At least two supporting letters from colleagues which state why the nominator feels the nominee is deserving of the award (with specific supporting examples given)</li>
+                                                <li data-aos="fade-up">Resume (or equivalent)</li>
                                             </ul>
                                         </div>
-                                       
+
 
                                     </div>
 
 
                                 </div>
-                                <hr/>
-                                <div className="teachers-award">
+                                <hr data-aos="fade-up" />
+                                <div className="teachers-award fs-1-2">
                                     <div className='heading-young-section d-flex item-center'>
-                                        <h3 className='color-orange'>MAZEDAN BEST TEACHER AWARD</h3>
+                                        <h3 className='color-orange' data-aos="fade-up">MAZEDAN BEST TEACHER AWARD</h3>
                                     </div>
                                     <div className="membership-details">
-                                        <p>This award recognizes outstanding achievement in science education through the motivation, stimulation, and encouragement of an awareness and understanding of the sciences. The Mazedan Awards for Excellence in Mathematics and Science Teaching are the honors bestowed by the Mazedan International Research Academy specifically for K-12 science, technology, engineering, mathematics, and/or computer science teaching. The exemplary teachers recognize for the award each year. Awards are given to science, technology, engineering, mathematics, and/or computer science teachers from India and Turkey. The award recognizes those teachers have both deep content knowledge of the subjects they teach and the ability to motivate and enable students to be successful in those areas. Awardees reflect the expertise and dedication of the Nation's teaching corps, and they demonstrate the positive impact of excellent teachers on student achievement</p>
+                                        <p data-aos="fade-up">This award recognizes outstanding achievement in science education through the motivation, stimulation, and encouragement of an awareness and understanding of the sciences. The Mazedan Awards for Excellence in Mathematics and Science Teaching are the honors bestowed by the Mazedan International Research Academy specifically for K-12 science, technology, engineering, mathematics, and/or computer science teaching. The exemplary teachers recognize for the award each year. Awards are given to science, technology, engineering, mathematics, and/or computer science teachers from India and Turkey. The award recognizes those teachers have both deep content knowledge of the subjects they teach and the ability to motivate and enable students to be successful in those areas. Awardees reflect the expertise and dedication of the Nation's teaching corps, and they demonstrate the positive impact of excellent teachers on student achievement</p>
                                         <div>
-                                            <h3>Eligibility</h3>
-                                            <p>Applicants must:</p>
+                                            <h3 data-aos="fade-up">Eligibility</h3>
+                                            <p data-aos="fade-up">Applicants must:</p>
                                             <ul className='container'>
-                                                <li>Teach science, technology, engineering, mathematics, and/or computer science as part of their contracted teaching responsibilities at the K-6 grade level in a public (including charter) or private school.</li>
-                                                <li>Hold at least a bachelor's degree from an accredited institution.</li>
-                                                <li>Be full-time employees of the school or school district as determined by state and district policies, with responsibilities for teaching students no less than 50% of the school's allotted instructional time.</li>
+                                                <li data-aos="fade-up">Teach science, technology, engineering, mathematics, and/or computer science as part of their contracted teaching responsibilities at the K-6 grade level in a public (including charter) or private school.</li>
+                                                <li data-aos="fade-up">Hold at least a bachelor's degree from an accredited institution.</li>
+                                                <li data-aos="fade-up">Be full-time employees of the school or school district as determined by state and district policies, with responsibilities for teaching students no less than 50% of the school's allotted instructional time.</li>
                                             </ul>
                                         </div>
                                         <div>
-                                            <h3>Selection</h3>
-                                            <p>All applications will be subjected to a review process</p>
+                                            <h3 data-aos="fade-up">Selection</h3>
+                                            <p data-aos="fade-up">All applications will be subjected to a review process</p>
                                             <ul className='container'>
-                                                <li>An awards subcommittee selected by the Executive Committee will determine the winners based on the submitted nominations.</li>
-                                                <li>Awards will be presented at the annual function on national science day. All finalists will be subject to a background check.</li>
+                                                <li data-aos="fade-up">An awards subcommittee selected by the Executive Committee will determine the winners based on the submitted nominations.</li>
+                                                <li data-aos="fade-up">Awards will be presented at the annual function on national science day. All finalists will be subject to a background check.</li>
                                             </ul>
                                         </div>
                                         <div>
-                                            <h3>Nature of Award:</h3>
+                                            <h3 data-aos="fade-up">Nature of Award:</h3>
                                             <ul className='container'>
-                                                <li>Recipients of the award receive a certificate of recognition.</li>
-                                                <li>Recipients will get the life membership of Mazedan.</li>
-                                                <li>No cash prize will be given.</li>
+                                                <li data-aos="fade-up">Recipients of the award receive a certificate of recognition.</li>
+                                                <li data-aos="fade-up">Recipients will get the life membership of Mazedan.</li>
+                                                <li data-aos="fade-up">No cash prize will be given.</li>
                                             </ul>
                                         </div>
-                                        <h3>Processing Fee</h3>
-                                        <p>An amount of Rs. 500/- has to be deposited by the applicant through online transfer</p>
-                                        <h3>Nominations:</h3>
-                                        <p>Anyone—principals, teachers, parents, students, or members of the general public—may nominate exceptional individuals who teach science, technology, engineering, mathematics, and/or computer science in grades K-6 for this award year. To submit a nomination, the following information is required: Teacher's name, Email address, School contact information Nominations may be submitted for more than one teacher. Teachers may also initiate the application process themselves</p>
+                                        <h3 data-aos="fade-up">Processing Fee</h3>
+                                        <p data-aos="fade-up">An amount of Rs. 500/- has to be deposited by the applicant through online transfer</p>
+                                        <h3 data-aos="fade-up">Nominations:</h3>
+                                        <p data-aos="fade-up">Anyone—principals, teachers, parents, students, or members of the general public—may nominate exceptional individuals who teach science, technology, engineering, mathematics, and/or computer science in grades K-6 for this award year. To submit a nomination, the following information is required: Teacher's name, Email address, School contact information Nominations may be submitted for more than one teacher. Teachers may also initiate the application process themselves</p>
                                         <div>
-                                            <h3>Once a teacher is nominated or initiates the application process, the teacher will receive an email invitation to continue the application process. The invitation will include login nformation for accessing the online application system.</h3>
-                                            <p>Requirements and content recommendations include the following:</p>
+                                            <h3 data-aos="fade-up">Once a teacher is nominated or initiates the application process, the teacher will receive an email invitation to continue the application process. The invitation will include login nformation for accessing the online application system.</h3>
+                                            <p data-aos="fade-up">Requirements and content recommendations include the following:</p>
                                             <ul className='container'>
-                                                <li>At least two supporting letters from colleagues which state why the nominator feels the nominee is deserving of the award (with specific supporting examples given)</li>
-                                                <li>Resume (or equivalent)</li>
+                                                <li data-aos="fade-up">At least two supporting letters from colleagues which state why the nominator feels the nominee is deserving of the award (with specific supporting examples given)</li>
+                                                <li data-aos="fade-up">Resume (or equivalent)</li>
                                             </ul>
                                         </div>
 
@@ -131,75 +139,75 @@ const AwardsData = () => {
 
                                 </div>
                                 <div id="awardees-row">
-                                    <div className=" heading border-tool d-flex item-center">
+                                    <div className=" heading border-tool d-flex item-center" data-aos="fade-up">
                                         <h2>MAZEDAN </h2> &nbsp; <h2 className='color-orange'>AWARDEES</h2>
                                     </div>
-                                    <div className="award-table">
-                                        <hr/>
-                                        <div className="row1 d-flex  ">
+                                    <div className="award-table fs-1-2" data-aos="fade-up">
+                                        <hr data-aos="fade-up" />
+                                        <div className="row1 d-flex  " data-aos="fade-up">
                                             <div className="col-3">
-                                                <p><b>YEAR</b></p>
+                                                <p data-aos="fade-up"><b>YEAR</b></p>
                                             </div>
                                             <div className="col-3">
-                                                <p><b>YEAR</b></p>
+                                                <p data-aos="fade-up"><b>YEAR</b></p>
                                             </div>
                                             <div className="col-3">
-                                                <p><b>AWARDEE</b></p>
+                                                <p data-aos="fade-up"><b>AWARDEE</b></p>
                                             </div>
                                             <div className="col-3">
-                                                <p><b>ORGANIZATION</b></p>
-                                            </div>
-
-                                        </div>
-                                        <hr/>
-                                        <div className="row2 d-flex ">
-                                            <div className="col-3">
-                                                <p>2000</p>
-                                            </div>
-                                            <div className="col-3">
-                                                <p>Best Teacher Award</p>
-                                            </div>
-                                            <div className="col-3">
-                                                <p>Dr. Sanjay Singh</p>
-                                            </div>
-                                            <div className="col-3">
-                                                <p>IIT Delhi</p>
+                                                <p data-aos="fade-up"><b>ORGANIZATION</b></p>
                                             </div>
 
                                         </div>
-                                        <hr/>
-                                        <div className="row3 d-flex ">
+                                        <hr data-aos="fade-up" />
+                                        <div className="row2 d-flex " data-aos="fade-up">
                                             <div className="col-3">
-                                                <p>2000</p>
+                                                <p data-aos="fade-up">2000</p>
                                             </div>
                                             <div className="col-3">
-                                                <p>Young Researcher Award</p>
+                                                <p data-aos="fade-up">Best Teacher Award</p>
                                             </div>
                                             <div className="col-3">
-                                                <p>Dr. Sunil Kuma</p>
+                                                <p data-aos="fade-up">Dr. Sanjay Singh</p>
                                             </div>
                                             <div className="col-3">
-                                                <p>IIT Roorkee</p>
-                                            </div>
-
-                                        </div>
-                                        <hr/>
-                                        <div className="row4 d-flex ">
-                                            <div className="col-3">
-                                                <p>1999</p>
-                                            </div>
-                                            <div className="col-3">
-                                                <p>Young Researcher Award</p>
-                                            </div>
-                                            <div className="col-3">
-                                                <p>RC Singh</p>
-                                            </div>
-                                            <div className="col-3">
-                                                <p>MMU Mullaana</p>
+                                                <p data-aos="fade-up">IIT Delhi</p>
                                             </div>
 
                                         </div>
-                                        <hr/>
+                                        <hr data-aos="fade-up" />
+                                        <div className="row3 d-flex " data-aos="fade-up">
+                                            <div className="col-3">
+                                                <p data-aos="fade-up">2000</p>
+                                            </div>
+                                            <div className="col-3">
+                                                <p data-aos="fade-up">Young Researcher Award</p>
+                                            </div>
+                                            <div className="col-3">
+                                                <p data-aos="fade-up">Dr. Sunil Kuma</p>
+                                            </div>
+                                            <div className="col-3">
+                                                <p data-aos="fade-up">IIT Roorkee</p>
+                                            </div>
+
+                                        </div>
+                                        <hr data-aos="fade-up" />
+                                        <div className="row4 d-flex " data-aos="fade-up">
+                                            <div className="col-3">
+                                                <p data-aos="fade-up">1999</p>
+                                            </div>
+                                            <div className="col-3">
+                                                <p data-aos="fade-up">Young Researcher Award</p>
+                                            </div>
+                                            <div className="col-3">
+                                                <p data-aos="fade-up">RC Singh</p>
+                                            </div>
+                                            <div className="col-3">
+                                                <p data-aos="fade-up">MMU Mullaana</p>
+                                            </div>
+
+                                        </div>
+                                        <hr data-aos="fade-up" />
                                     </div>
 
                                 </div>

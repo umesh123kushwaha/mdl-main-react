@@ -19,7 +19,7 @@ const AboutLeftColumn1 = () => {
     <div className="main ">
         <div className='first-column'>
             <div className="column-heading display-flex">
-                <h3>KNOW ABOUT MAZEDAN</h3>
+                <h2>KNOW ABOUT MAZEDAN</h2>
             </div>
             <div className="content-data fs-1-5">
                     <div>  &#10146; <HashLink to={''}> Mazedan at a Glance</HashLink></div>
@@ -30,7 +30,7 @@ const AboutLeftColumn1 = () => {
         </div>
         <div className="second-column">
         <div className="column-heading display-flex">
-                    <h3>ACHIEVEMENTS</h3>
+                    <h2>ACHIEVEMENTS</h2>
                 </div>
                 <div className="content-data">
                     <div className="container" data-aos="zoom-in">

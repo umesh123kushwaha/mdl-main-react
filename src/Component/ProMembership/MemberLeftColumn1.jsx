@@ -3,8 +3,17 @@ import { FaExternalLinkAlt } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import styled from 'styled-components'
+import AOS from "aos";
+import { useEffect } from 'react';
 
 const MemberLeftColumn1 = () => {
+    useEffect(() => {
+        AOS.init({
+          
+          duration: 1000,
+        
+        });
+      }, []);
     return (
         <Wrapper>
             <div className="main ">
@@ -19,19 +28,19 @@ const MemberLeftColumn1 = () => {
                         <div> &#10146; <HashLink to={'#term-condition'}> Terms & Conditions</HashLink></div>
                     </div>
                 </div>
-                <div className="second-column">
+                <div className="second-column" data-aos="fade-up">
                     <div className="column-heading display-flex">
-                        <h2>BENEFITS</h2>
+                        <h2 data-aos="fade-left">BENEFITS</h2>
                     </div>
                     <div className="content-data">
-                        <p>As a member of Mazedan, you'll receive access to select content, research guide, article writing guide, plagiarism check facility, product discounts, and more.</p>
+                        <p data-aos="fade-right">As a member of Mazedan, you'll receive access to select content, research guide, article writing guide, plagiarism check facility, product discounts, and more.</p>
                     </div>
                 </div>
-                <div className="third-column">
+                <div className="third-column" data-aos="fade-up">
                     <div className="column-heading display-flex">
-                        <h2>Member's News and Updates</h2>
+                        <h2 data-aos="fade-left">Member's News and Updates</h2>
                     </div>
-                    <div className="content-data">
+                    <div className="content-data" data-aos="fade-up">
                         <marquee width="100%" height="200px" direction="up" scrolldelay="150">
                             <div className='scroll-data d-flex flex-column'>
                                 <NavLink to=''>
@@ -91,14 +100,14 @@ const MemberLeftColumn1 = () => {
                         </marquee>
                     </div>
                 </div>
-                <div className="fifth-column">
+                <div className="fifth-column" data-aos="fade-up">
                     <div className="features container content-data">
-                        <h4>Features Required:</h4>
+                        <h4 data-aos="fade-up">Features Required:</h4>
                         <ul>
 
-                            <li>A form with Payment Gateway integration</li>
-                            <li>Certificate generate as PDF</li>
-                            <li>Mail Acknowledgement</li>
+                            <li data-aos="fade-up">A form with Payment Gateway integration</li>
+                            <li data-aos="fade-up">Certificate generate as PDF</li>
+                            <li data-aos="fade-up">Mail Acknowledgement</li>
                         </ul>
                     </div>
                 </div>

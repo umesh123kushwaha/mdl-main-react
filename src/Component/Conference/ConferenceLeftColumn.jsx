@@ -2,8 +2,16 @@ import React from 'react'
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components'
-
+import AOS from "aos";
+import { useEffect } from 'react';
 const ConferenceLeftColumn = () => {
+    useEffect(() => {
+        AOS.init({
+          
+          duration: 1000,
+        
+        });
+      }, []);
     return (
         <Wrapper>
             <div className="main ">
@@ -19,12 +27,12 @@ const ConferenceLeftColumn = () => {
                         <div> &#10146; <NavLink> Program Sponsorship</NavLink></div>
                     </div>
                 </div>
-                <div className="second-column">
-                    <img src="./images/conference-left-img.png" alt="" />
+                <div className="second-column" data-aos="fade-up">
+                    <img data-aos="zoom-in" src="./images/conference-left-img.png" alt="" />
                 </div>
-                <div className="third-column">
+                <div className="third-column" data-aos="fade-up">
                     <div className="column-heading display-flex">
-                        <h2>Journal News and Updates</h2>
+                        <h2 data-aos="fade-right">Journal News and Updates</h2>
                     </div>
                     <div className="content-data">
                         <marquee width="100%" height="200px" direction="up" scrolldelay="150">
@@ -86,40 +94,40 @@ const ConferenceLeftColumn = () => {
                         </marquee>
                     </div>
                 </div>
-                <div className="fourth-column">
+                <div className="fourth-column" data-aos="fade-up">
                     <div className="column-heading display-flex">
-                        <h2>Proceedings Publication</h2>
+                        <h2 data-aos="fade-right">Proceedings Publication</h2>
                     </div>
                     <div className="content-data">
-                            <p className='text-center'>Benefit from our experience and offered services to turn your conference publication into worldwide accessible science</p>
-                            <p className='text-center second-paragraph'>Publish your Conference Proceedings with Mazedan Digital Library
+                            <p className='text-center' data-aos="fade-left">Benefit from our experience and offered services to turn your conference publication into worldwide accessible science</p>
+                            <p className='text-center second-paragraph' data-aos="fade-right">Publish your Conference Proceedings with Mazedan Digital Library
                             </p>
                             <NavLink to={""} className='t-decoration col-12 display-flex'>
-                                <div className="btn text-center display-flex">PROCEEDINGS PUBLICATION FORM</div>
+                                <div className="btn text-center display-flex" data-aos="zoom-in">PROCEEDINGS PUBLICATION FORM</div>
                             </NavLink>
                     </div>
                 </div>
-                <div className="fifth-column">
+                <div className="fifth-column" data-aos="fade-up">
                     <div className="column-heading display-flex">
-                        <h3>Become the Conference Sponsor</h3>
+                        <h3 data-aos="fade-left">Become the Conference Sponsor</h3>
                     </div>
                     <div className="content-data">
-                            <p className='text-center'>Enhance your visibility and outreach to the academic and business community by becoming a Sponsor of our Events.</p>
-                            <p className='text-center second-paragraph'>A place to find technology investment and licensing partners</p>
+                            <p data-aos="fade-right" className='text-center'>Enhance your visibility and outreach to the academic and business community by becoming a Sponsor of our Events.</p>
+                            <p data-aos="fade-left" className='text-center second-paragraph'>A place to find technology investment and licensing partners</p>
                             <NavLink to={""} className='t-decoration col-12 display-flex'>
-                                <div className="btn text-center display-flex">SPONSORHIP FORM</div>
+                                <div data-aos="zoom-in" className="btn text-center display-flex">SPONSORHIP FORM</div>
                             </NavLink>
                     </div>
                 </div>
-                <div className="last-column">
+                <div className="last-column" data-aos="fade-up">
                     <div className="column-heading display-flex">
-                        <h2>Become the Conference Partner</h2>
+                        <h2 data-aos="fade-left">Become the Conference Partner</h2>
                     </div>
                     <div className="content-data">
-                            <p className='text-center'>Mazedan welcomes you to become our conference partner.</p>
-                            <p className='text-center second-paragraph'>In a role of lead organizer</p>
+                            <p data-aos="fade-right" className='text-center'>Mazedan welcomes you to become our conference partner.</p>
+                            <p data-aos="fade-left" className='text-center second-paragraph'>In a role of lead organizer</p>
                             <NavLink to={""} className='t-decoration col-12 display-flex'>
-                                <div className="btn text-center display-flex">CONFERENCE PARTNER FORM</div>
+                                <div data-aos="zoom-in" className="btn text-center display-flex">CONFERENCE PARTNER FORM</div>
                             </NavLink>
                     </div>
                 </div>

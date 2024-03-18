@@ -23,10 +23,10 @@ const ConferenceData = () => {
                                 <div className="about-heading border-tool d-flex item-center">
                                     <h2>MAZEDAN </h2> &nbsp;<h2 className='color-orange'>BOOKS & JOURNALS</h2>
                                 </div>
-                                <div className="about-content">
+                                <div className="about-content fs-1-2">
                                     <p>Mazedan International Research Academy is a unique platform for publishing online open-access refereed journals of the highest quality and significance in all areas of Academic Research and Technology. Open access allows everyone to have unrestricted use and reuse of scientific content as per creative commons license provided on each journal's homepage. As an Open Access Publisher, we are providing an opportunity for global scholars to get involved in updating themselves with the ongoing research. We host international, open access, peer-reviewed academic journals. Whether you are an Inspiring teacher, scientist, creative aspirants, curious students or researcher; we are cordially inviting you to browse our website and learn about ongoingresearches in the field. In order to maintain manuscript quality, each manuscript submitted shall undergo the peer review process. All the Journal with Mazedan follows a rigorous peer-review process to retain high standards of published articles.</p>
                                 </div>
-                                <div className="conference-table">
+                                <div className="conference-table fs-1-2">
                                     <h3>Upcoming Conferences</h3>
                                     <table>
                                         <tr>
