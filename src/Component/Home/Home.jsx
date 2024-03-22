@@ -133,9 +133,11 @@ const Wrapper = styled.section`
       .slider-buttons{
         margin-top: 10rem;
         justify-content: space-around;
+        
         button{
           border: 1px solid ${({ theme }) => theme.colors.white};
           font-size: 18px;
+          transition: ease 0.6s;
             &:hover{
               background-color: ${({ theme }) => theme.colors.orange};
               border: none;

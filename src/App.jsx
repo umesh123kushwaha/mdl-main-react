@@ -16,7 +16,6 @@ import ServerError from "./Component/ServerError"
 import Training from "./Component/Training/Training"
 import GoTo from "./Component/GoTo"
 import JournalResult from "./Component/Journals/SearchJournals/JournalResult"
-import Slider from "./Component/Subcription/Slider"
 import EditorialBoard from "./Component/Journals/SearchJournals/SearchJournalResult/EditorialBoard"
 
 
@@ -54,7 +53,6 @@ function App() {
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/conference" element={<Conference /> } />
           <Route path="/journal-page" element={<JournalResult />} />
-          <Route path="/slider" element={<Slider />} />
           <Route path="/editors" element={<EditorialBoard />} />
           {/* <Route path="/server-error" element={<ServerError />} /> */}
         </Routes>

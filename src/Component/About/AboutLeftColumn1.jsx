@@ -8,45 +8,61 @@ import "aos/dist/aos.css";
 
 const AboutLeftColumn1 = () => {
     useEffect(() => {
-    AOS.init({
-      
-      duration: 1000,
-      
-    });
-  }, []);
-  return (
-   <Wrapper>
-    <div className="main ">
-        <div className='first-column'>
-            <div className="column-heading display-flex">
-                <h2>KNOW ABOUT MAZEDAN</h2>
-            </div>
-            <div className="content-data fs-1-5">
-                    <div>  &#10146; <HashLink to={''}> Mazedan at a Glance</HashLink></div>
-                    <div > &#10146; <HashLink to={'#board-persons'}> Executive Board</HashLink></div>
-                    <div> &#10146; <HashLink to={'#BCONSTITUTION'}> Constitution</HashLink></div>
-                    <div> &#10146; <HashLink to={'#contact'}> Contacts</HashLink></div>
-            </div>
-        </div>
-        <div className="second-column">
-        <div className="column-heading display-flex">
-                    <h2>ACHIEVEMENTS</h2>
-                </div>
-                <div className="content-data">
-                    <div className="container" data-aos="zoom-in">
-                        <div className='d-flex'><span>&#10065;</span><NavLink><p>Mazedan is promoting research with more than 2000+ scholars.</p></NavLink></div>
-                        <div className='d-flex'><span>&#10065;</span><NavLink><p>Research Show Growing Awareness and Uptake of Open Access Publishing By Authors</p></NavLink></div>
+        AOS.init({
+
+            duration: 1000,
+
+        });
+    }, []);
+    return (
+        <Wrapper>
+            <div className="main ">
+                <div className='first-column'>
+                    <div className="column-heading display-flex">
+                        <h2>KNOW ABOUT MAZEDAN</h2>
+                    </div>
+                    <div className="content-data fs-1-5">
+                        <div>  &#10146; <HashLink to={''}> Mazedan at a Glance</HashLink></div>
+                        <div > &#10146; <HashLink to={'#board-persons'}> Executive Board</HashLink></div>
+                        <div> &#10146; <HashLink to={'#BCONSTITUTION'}> Constitution</HashLink></div>
+                        <div> &#10146; <HashLink to={'#contact'}> Contacts</HashLink></div>
                     </div>
                 </div>
-        </div>
-    </div>
-    
-   </Wrapper>
-  )
+                <div className="second-column">
+                    <div className="column-heading display-flex">
+                        <h2>ACHIEVEMENTS</h2>
+                    </div>
+                    <div className="content-data">
+                        <div className="container" data-aos="zoom-in">
+                            <div className='d-flex'><span>&#10065;</span><NavLink><p>Mazedan is promoting research with more than 2000+ scholars.</p></NavLink></div>
+                            <div className='d-flex'><span>&#10065;</span><NavLink><p>Research Show Growing Awareness and Uptake of Open Access Publishing By Authors</p></NavLink></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </Wrapper>
+    )
 }
 const Wrapper = styled.section`
     .main{
-        
+        .first-column{
+            .content-data{
+            padding: 1rem 0;
+            div{
+                transition: all 0.2s;
+                padding: 0 1rem;
+                 &:hover{
+                background-color: ${({ theme }) => theme.colors.orange};
+                color: ${({ theme }) => theme.colors.white};
+                }
+
+                &:hover a{
+                    color: ${({ theme }) => theme.colors.white};
+                }
+            } 
+        }
+        }
     }
  .second-column{
            margin-top: 5rem;

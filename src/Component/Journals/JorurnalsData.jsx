@@ -39,6 +39,7 @@ const JournalData = () => {
                                 <div className="select-journal-column">
                                     <SelectJournals />
                                 </div>
+                                <br />
                                 <div className="books-row" id='journalList'>
                                     <LIstBookAndJournals />
                                 </div>

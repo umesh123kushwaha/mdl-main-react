@@ -188,5 +188,22 @@ position: relative;
         text-decoration: none;
         color: ${({ theme }) => theme.colors.black};
     }
-}          
+} 
+.first-column{
+            .content-data{
+            padding: 1rem 0;
+            div{
+                transition: all 0.2s;
+                padding: 0 1rem;
+                 &:hover{
+                background-color: ${({ theme }) => theme.colors.orange};
+                color: ${({ theme }) => theme.colors.white};
+                }
+
+                &:hover a{
+                    color: ${({ theme }) => theme.colors.white};
+                }
+            } 
+        }
+        }         
 `;

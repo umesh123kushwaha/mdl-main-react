@@ -16,18 +16,18 @@ const LIstBookAndJournals = () => {
                 <div className="container">
                     <div className="heading d-flex item center flex-column col-12">
                         <div className='d-flex item-center col-12'>
-                            <h2 className='heading-1'>LIST of</h2>&nbsp;<h2 className='heading-2'> Book And Journals</h2>
+                            <h2 className='heading-1' data-aos="fade-right">LIST of</h2>&nbsp;<h2 className='heading-2' data-aos="fade-left"> Book And Journals</h2>
                         </div>
-                        <div className='col-12'><h5>Explore the List</h5></div>
+                        <div className='col-12'><h5 data-aos="fade-up">Explore the List</h5></div>
                     </div>
                     <div className="sort-data col-12">
                         <div className="sort-row col-12">
                             <ul className='d-flex item-center col-6 space-between'>
-                                <li>All</li>
-                                <li>Open Access</li>
-                                <li>Books</li>
-                                <li>Journals</li>
-                                <li>Magazines</li>
+                                <li data-aos="fade-up">All</li>
+                                <li data-aos="fade-up">Open Access</li>
+                                <li data-aos="fade-up">Books</li>
+                                <li data-aos="fade-up">Journals</li>
+                                <li data-aos="fade-up">Magazines</li>
                             </ul>
                         </div>
 

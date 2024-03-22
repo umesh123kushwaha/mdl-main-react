@@ -8,9 +8,9 @@ const SearchJournalData = () => {
   return (
     <Wrapper className="d-flex ">
      <SearchJournalLeft />
-     {/* <AboutJournal /> */}
+     <AboutJournal />
      
-     <SubmissionTracking />
+     {/* <SubmissionTracking /> */}
     </Wrapper> 
   )
 };

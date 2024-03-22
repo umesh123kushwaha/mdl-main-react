@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import { HashLink } from 'react-router-hash-link';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Swiper from '../Subcription/Swiper';
 
 const JournalLeftColumn = () => {
     useEffect(() => {
@@ -17,7 +18,7 @@ const JournalLeftColumn = () => {
     return (
         <Wrapper>
             <div className="main ">
-                <div className='column1'>
+                <div className='first-column'>
                     <div className="column-heading display-flex">
                         <h2>MAZEDAN PUBLICATION HOME</h2>
                     </div>
@@ -28,7 +29,7 @@ const JournalLeftColumn = () => {
                         
                     </div>
                 </div>
-                <div className="second-column" data-aos="fade-up">
+                <div className="second-column first-column" data-aos="fade-up">
                     <div className="column-heading display-flex">
                         <h2 data-aos="fade-left" data-aos-easing="ease-in-sine">Publication Matrices</h2>
                     </div>
@@ -135,11 +136,11 @@ const JournalLeftColumn = () => {
                     <div className="column-heading display-flex">
                         <h2 data-aos="fade-left">Featured Journals</h2>
                     </div>
-                    <div className="content-data display-flex">
-                        
-                        <FaChevronLeft className='slide-icon' />
+                    <div className="content-data display-flex text-center">
+                        <Swiper />
+                        {/* <FaChevronLeft className='slide-icon' />
                         <img src="./images/books-pic/1.png" alt="" data-aos="zoom-in" />
-                        <FaChevronRight className='slide-icon'/>
+                        <FaChevronRight className='slide-icon'/> */}
                     </div>
                 </div>
             </div>
